@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "postbuild": "node -e \"const { copyFileSync, existsSync } = require('fs'); const src = 'dist/server/index.js'; const dest = 'dist/server/server.js'; if (existsSync(src)) copyFileSync(src, dest);\"",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
