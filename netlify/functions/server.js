@@ -1,4 +1,15 @@
-import serverBuild from "../../dist/server/server.js";
+import * as serverModule from "../../dist/server/server.js";
+
+const serverBuild = serverModule.default ?? serverModule;
+const fetchFn = typeof serverBuild.fetch === "function"
+  ? serverBuild.fetch.bind(serverBuild)
+  : typeof serverBuild.default?.fetch === "function"
+    ? serverBuild.default.fetch.bind(serverBuild.default)
+    : undefined;
+
+if (!fetchFn) {
+  throw new Error("Netlify server function could not locate a valid fetch handler in the server bundle.");
+}
 
 function buildUrl(event) {
   const host = event.headers?.host || "localhost";
@@ -25,7 +36,7 @@ function buildRequest(event) {
 
 export const handler = async (event) => {
   const request = buildRequest(event);
-  const response = await serverBuild.fetch(request);
+  const response = await fetchFn(request);
 
   const headers = {};
   response.headers.forEach((value, key) => {
