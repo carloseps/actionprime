@@ -12,7 +12,7 @@ export const Route = createFileRoute("/")({
     meta: [
       {
         title:
-          "Action Prime — O maior complexo lifestyle de Macaíba/RN",
+          "Action Prime - O maior complexo lifestyle de Macaíba/RN",
       },
       {
         property: "og:title",

@@ -25,7 +25,7 @@ export function Hero() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(circle at 80% 20%, oklch(0.85 0.18 85 / 0.18), transparent 50%)",
+            "radial-gradient(circle at 80% 20%, oklch(0.4 0 0 / 0.2), transparent 10%)",
         }}
       />
 

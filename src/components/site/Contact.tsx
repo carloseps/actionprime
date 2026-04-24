@@ -94,54 +94,24 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Stylized map */}
+          {/* Functional Google Maps iframe */}
           <div className="reveal">
             <div className="relative rounded-3xl overflow-hidden border border-border h-full min-h-[420px] bg-card">
-              <div
-                className="absolute inset-0"
-                style={{
-                  backgroundImage: `
-                    linear-gradient(oklch(0.32 0 0) 1px, transparent 1px),
-                    linear-gradient(90deg, oklch(0.32 0 0) 1px, transparent 1px)
-                  `,
-                  backgroundSize: "40px 40px",
-                }}
+              <iframe
+                src="https://www.google.com/maps?q=Action+Prime+R.+Dr.+Her%C3%A1clito+Vilar,+SN,+Maca%C3%ADba+-+RN,+59280-000&output=embed"
+                title="Action Prime Macaíba"
+                className="absolute inset-0 h-full w-full border-0"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
-              {/* fake roads */}
-              <div
-                className="absolute inset-x-0 top-1/2 h-3 -translate-y-1/2"
-                style={{ backgroundColor: "oklch(0.28 0 0)" }}
-              />
-              <div
-                className="absolute inset-y-0 left-1/3 w-2"
-                style={{ backgroundColor: "oklch(0.28 0 0)" }}
-              />
-              <div
-                className="absolute top-1/4 left-1/4 right-1/4 h-1.5 rotate-12"
-                style={{ backgroundColor: "oklch(0.26 0 0)" }}
-              />
-
-              {/* pin */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-full">
-                <div className="relative">
-                  <div className="absolute inset-0 rounded-full bg-primary/30 animate-ping" />
-                  <div className="relative rounded-full bg-primary p-3 shadow-glow">
-                    <MapPin
-                      size={28}
-                      className="text-primary-foreground"
-                      strokeWidth={2.5}
-                    />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/90 to-transparent p-4">
+                <div className="max-w-xs rounded-2xl bg-background/90 border border-border p-4 text-sm text-foreground">
+                  <div className="font-bold">Action Prime</div>
+                  <div className="mt-1 text-muted-foreground">
+                    R. Dr. Heráclito Vilar, SN, Macaíba - RN, 59280-000
                   </div>
                 </div>
-                <div className="mt-3 -translate-x-1/2 left-1/2 absolute bg-background border border-primary rounded-lg px-3 py-1.5 whitespace-nowrap">
-                  <span className="text-xs font-bold">
-                    Action Prime
-                  </span>
-                </div>
-              </div>
-
-              <div className="absolute bottom-4 right-4 bg-background/80 backdrop-blur-sm rounded-lg px-3 py-1.5 text-xs text-muted-foreground">
-                Macaíba/RN
               </div>
             </div>
           </div>
