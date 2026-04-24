@@ -1,16 +1,16 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-export const Route = createFileRoute("/login")({
+export const Route = createFileRoute("/aluno")({
   head: () => ({
     meta: [
-      { title: "Login | Action Prime" },
-      { name: "description", content: "Login do Sistema da Action Prime." },
+      { title: "Aluno | Action Prime" },
+      { name: "description", content: "Aluno do Sistema da Action Prime." },
     ],
   }),
-  component: Login,
+  component: Aluno,
 });
 
-function Login() {
+function Aluno() {
   return (
     <div className="h-screen flex flex-col bg-background text-foreground overflow-hidden">
       <header className="w-full bg-primary shadow-lg border-b border-primary-foreground/10 flex-none">
@@ -26,7 +26,7 @@ function Login() {
       <main className="flex-1 mt-[1px] bg-background">
         <iframe
           src="https://evo-totem.w12app.com.br/actionfitness/2/site/landing-page/login"
-          title="Action Prime Login"
+          title="Action Prime Aluno"
           className="w-full h-full border-0"
         />
       </main>
