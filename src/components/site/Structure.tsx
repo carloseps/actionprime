@@ -22,8 +22,8 @@ export function Structure() {
   return (
     <section id="estrutura" className="py-24 md:py-32 bg-background relative overflow-hidden">
       <div
-        className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-20 blur-3xl pointer-events-none"
-        style={{ background: "oklch(0.85 0.18 85)" }}
+        className="absolute top-0 right-0 w-[700px] h-[700px] rounded-full opacity-20 blur-3xl pointer-events-none"
+        style={{ background: "rgba(20, 10, 10, 1)" }}
       />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
