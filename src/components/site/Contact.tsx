@@ -50,10 +50,11 @@ export function Contact() {
                     Funcionamento
                   </div>
                   <div className="mt-2 font-display font-bold text-lg">
-                    Horário Livre / Flexível
+                    5h às 22h de Seg. a Sexta
                   </div>
-                  <div className="text-sm text-muted-foreground mt-1">
-                    Treine no seu ritmo, no seu tempo.
+                  <div className="text-sm text-muted-foreground mt-1 space-y-1">
+                    <div>8h às 15h Sábado</div>
+                    <div>8h às 13h Domingos e Feriados</div>
                   </div>
                 </div>
               </div>

@@ -5,9 +5,6 @@ export function Footer() {
         <div className="font-display font-black text-lg">
           ACTION<span className="text-primary">PRIME</span>
         </div>
-        <div className="text-xs text-muted-foreground text-center">
-          Horário Livre / Flexível · Macaíba/RN
-        </div>
         <div className="text-xs text-muted-foreground">
           © 2026 Action Prime. Todos os direitos reservados.
         </div>

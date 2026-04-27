@@ -68,7 +68,7 @@ export function Hero() {
           {[
             { n: "2.400m²", l: "Estrutura" },
             { n: "200+", l: "Equipamentos" },
-            { n: "24/7", l: "Horário Livre" },
+            { n: "24/7", l: "Horário Flexível" },
           ].map((s) => (
             <div key={s.l} className="text-center">
               <div className="font-display text-2xl md:text-4xl font-black text-primary">
